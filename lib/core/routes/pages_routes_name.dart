@@ -1,1 +1,3 @@
-abstract class PagesRoutesName {}
+abstract class PagesRoutesName {
+  static const String splash = '/';
+}
