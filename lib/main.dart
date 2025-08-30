@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movies_app/core/routes/pages_routes_name.dart';
 import 'package:movies_app/core/routes/route.dart';
+import 'package:movies_app/core/theme/theme_manager.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,7 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       initialRoute: PagesRoutesName.splash,
+      theme: ThemeManager.theme,
       routes: Routes.route(context),
     );
   }
